@@ -1,10 +1,10 @@
 const path = require('path');
 
 const controller = {
-    homeController: function(req, res) {
+    homeController: (req, res) => {
         res.sendFile(path.resolve('./views/home.html'));
     },
-    aboutController: function(req, res) {
+    aboutController: (req, res) => {
         res.sendFile(path.resolve('./views/about.html'));
     }
 };
